@@ -5,7 +5,7 @@ data=feature;
 %%
 fprintf('1.Relief-f \n2.PCA\n');
 choice1 = input('');
-fprintf('classifiers:\n1、LR\n2、LDA\n3、QDA\n4、NB\n5、svm-ecoc\n');
+fprintf('classifiers:\n1.LR\n2.LDA\n3.QDA\n4.NB\n5.svm-ecoc\n');
 choice2 =input('');
 if(choice2>6 || choice2<1)
     return;
@@ -31,7 +31,7 @@ elseif(choice1==2)
      %[coeff,~,latent] = pca(data,'Centered',false);
      coeff = pca(data,'Centered',false);
 else
-    fprintf('exit、\n');
+    fprintf('exit臓蔵\n');
     return ;
 end
 precise=[];
